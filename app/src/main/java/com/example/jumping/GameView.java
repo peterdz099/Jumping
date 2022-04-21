@@ -137,13 +137,13 @@ public class GameView extends View {
 
         if((astroY +astro[0].getHeight()) <= 786 && (astroY +astro[0].getHeight()) >= 736){
             for(int i = 0; i < numberOfSquares; i++){
-                if((squaresX[i] < astroX +astro[0].getWidth()) && (astroX )<(squaresX[i] + squares1.getWidth()) ){
+                if((squaresX[i] < astroX) && (astroX )<(squaresX[i] + squares1.getWidth()) ){
                     gameOver(canvas);
                 }
-                if((squaresX2[i] < astroX +astro[0].getWidth()) && (astroX )<(squaresX2[i] + squares1.getWidth()) ){
+                if((squaresX2[i] < astroX) && (astroX )<(squaresX2[i] + squares1.getWidth()) ){
                     gameOver(canvas);
                 }
-                if((squaresX3[i] < astroX +astro[0].getWidth()) && (astroX )<(squaresX3[i] + squares1.getWidth()) ){
+                if((squaresX3[i] < astroX) && (astroX)<(squaresX3[i] + squares1.getWidth()) ){
                     gameOver(canvas);
                 }
             }
@@ -161,6 +161,7 @@ public class GameView extends View {
 
         return true;
     }
+
     public void gameOver(Canvas canvas){
         paint.setColor(Color.WHITE);
         paint.setStyle(Paint.Style.FILL);
