@@ -135,7 +135,7 @@ public class GameView extends View {
             }
         handler.postDelayed(runnable, update);
 
-        if((astroY +astro[0].getHeight()) <= 786 && (astroY +astro[0].getHeight()) >= 736){
+        if((astroY +astro[0].getHeight()) <= 786 && (astroY +astro[0].getHeight()) >= 636){
             for(int i = 0; i < numberOfSquares; i++){
                 if((squaresX[i] < astroX) && (astroX )<(squaresX[i] + squares1.getWidth()) ){
                     gameOver(canvas);
