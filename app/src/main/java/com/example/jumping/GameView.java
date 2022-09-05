@@ -14,7 +14,7 @@ import android.view.View;
 import java.util.Random;
 
 public class GameView extends View {
-
+    //testing
     Handler handler;
     Runnable runnable;
     Bitmap background;
