@@ -17,5 +17,7 @@ public class StartGame extends Activity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         gameView = new GameView(this);
         setContentView(gameView);
+        
+        //TEST API 
     }
 }
